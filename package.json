@@ -1,0 +1,10 @@
+{
+  "name": "AdminThemeGitKit",
+  "version": "1.0.0",
+  "description": "Admin theme based on Ryan's AdminThemeUiKit and inspired on Github.",
+  "main": "index.js",
+  "repository": "https://github.com/flydev-fr/AdminThemeGitKit.git",
+  "author": "flydev <11658616+flydev-fr@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {}
+}
