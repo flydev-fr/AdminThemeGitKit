@@ -27,8 +27,8 @@ class AdminThemeGitKit extends AdminThemeFramework implements Module, Configurab
 	public static function getModuleInfo() {
 		return array(
 			'title' => 'GitKit',
-			'version' => '3.0.16',
-			'summary' => 'Git like UI based on Uikit v3 admin theme',
+			'version' => '1.0.2',
+			'summary' => 'Git like UI based on AdminThemeUikit',
 			'autoload' => 'template=admin', 
 			'requires' => 'ProcessWire>=3.0.100'
 		); 
@@ -991,9 +991,9 @@ class AdminThemeGitKit extends AdminThemeFramework implements Module, Configurab
 			if(strpos($cssURL, '//') === false) $cssURL = $config->urls->root . ltrim($cssURL, '/');
 			return $this->wire('sanitizer')->entities($cssURL);
 		} else if(self::dev && strpos(__FILE__, '/wire/modules/') === false) {
-			return $config->urls->adminTemplates . 'uikit/dist/css/uikit.github.css?v=' . $version;
+			return $config->urls->adminTemplates . 'uikit/dist/css/uikit.git.css?v=' . $version;
 		} else {
-			return $config->urls->adminTemplates . 'uikit/dist/css/uikit.github.min.css?v=' . $version;
+			return $config->urls->adminTemplates . 'uikit/dist/css/uikit.git.min.css?v=' . $version;
 		}
 	}
 	
