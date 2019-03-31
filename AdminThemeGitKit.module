@@ -27,7 +27,7 @@ class AdminThemeGitKit extends AdminThemeFramework implements Module, Configurab
 	public static function getModuleInfo() {
 		return array(
 			'title' => 'GitKit',
-			'version' => '1.0.2',
+			'version' => '1.0.3',
 			'summary' => 'Git like UI based on AdminThemeUikit',
 			'autoload' => 'template=admin', 
 			'requires' => 'ProcessWire>=3.0.100'
@@ -447,7 +447,7 @@ class AdminThemeGitKit extends AdminThemeFramework implements Module, Configurab
 		$inputfields = $event->return;
 		if(!$inputfields instanceof InputfieldWrapper) return;
 		include_once(dirname(__FILE__) . '/config.php'); 
-		$configHelper = new AdminThemeGitkitConfigHelper($this);
+		$configHelper = new AdminThemeUikitConfigHelper($this);
 		$configHelper->configInputfield($inputfield, $inputfields); 
 	}
 
